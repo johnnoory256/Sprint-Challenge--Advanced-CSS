@@ -8,7 +8,7 @@
 
 3. What does `font-size: 62.5%` in the `html` tag do for us when using `rem` units?
 
-  Sets font-size to base 10px, so rem units will logically reflect pixels (e.g., 16px = 1.6rem)
+  Sets font-size to base ten, so rem units will logically reflect pixels (e.g., 16px = 1.6rem)
 
 4. How would you describe preprocessing to someone new to CSS?
 
