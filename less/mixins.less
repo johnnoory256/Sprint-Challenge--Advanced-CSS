@@ -1,1 +1,58 @@
 // Mixins Here
+
+.flex-nav() {
+    display: flex;
+    justify-content: space-evenly;
+  }
+
+.title-flex() {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  
+  }
+
+  // Use the mixin to create an animation..
+
+  
+  .keyframes(@name,@rules) {
+
+    @-webkit-keyframes @name {
+        @rules();
+    }
+  
+    @-moz-keyframes @name {
+        @rules();
+    }
+  
+    @-ms-keyframes @name {
+        @rules();
+    }
+  
+    @-o-keyframes @name {
+        @rules();
+    }
+  
+    @keyframes @name {
+        @rules();
+    }
+  }
+  
+  // 2. Use the mixin to create an animation
+  
+  .keyframes(pulse, {
+    0% , 50% , 100% {
+        opacity: 1;
+        ;
+    }
+  
+    25% , 75% {
+        opacity: 0;
+        
+    }
+  });
+  
+  
+  
+  

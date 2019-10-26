@@ -1,3 +1,58 @@
+@-webkit-keyframes pulse {
+  0%,
+  50%,
+  100% {
+    opacity: 1;
+  }
+  25%,
+  75% {
+    opacity: 0;
+  }
+}
+@-moz-keyframes pulse {
+  0%,
+  50%,
+  100% {
+    opacity: 1;
+  }
+  25%,
+  75% {
+    opacity: 0;
+  }
+}
+@-ms-keyframes pulse {
+  0%,
+  50%,
+  100% {
+    opacity: 1;
+  }
+  25%,
+  75% {
+    opacity: 0;
+  }
+}
+@-o-keyframes pulse {
+  0%,
+  50%,
+  100% {
+    opacity: 1;
+  }
+  25%,
+  75% {
+    opacity: 0;
+  }
+}
+@keyframes pulse {
+  0%,
+  50%,
+  100% {
+    opacity: 1;
+  }
+  25%,
+  75% {
+    opacity: 0;
+  }
+}
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
@@ -160,6 +215,47 @@ p {
   width: 100%;
   margin: 0 auto;
 }
+nav {
+  width: 100%;
+  background-color: rgba(246, 246, 246, 0.9);
+  z-index: 1;
+  position: fixed;
+}
+nav .title {
+  width: 800px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+@media only screen and (max-width:500px) {
+  nav .title {
+    width: 80%;
+  }
+}
+nav .title h1 {
+  font-size: 3rem;
+  margin: 20px 0;
+}
+nav .title .nav-bar {
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  padding: 10px 0;
+}
+nav .title .nav-bar a {
+  text-decoration: none;
+  color: black;
+  font-size: 1.8rem;
+}
+nav .title .nav-bar a:hover {
+  animation: pulse 0.5s 1 both;
+  -ms-animation: pulse 0.5s 1 both;
+  -moz-animation: pulse 0.5s 1 both;
+  -webkit-animation: pulse 0.5s 1 both;
+  -o-animation: pulse 0.5s 1 both;
+}
 footer {
   color: #22283B;
   background: #f4f4f4;
@@ -169,6 +265,15 @@ footer {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+.home .intro img {
+  border-radius: 5px 5px;
+  padding-top: 105px;
+}
+@media only screen and (max-width:500px) {
+  .home .intro img {
+    width: 100%;
+  }
 }
 .home .intro h2 {
   padding: 15px;
