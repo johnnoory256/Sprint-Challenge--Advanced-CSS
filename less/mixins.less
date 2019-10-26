@@ -4,15 +4,15 @@
     display: flex;
     justify-content: space-evenly;
   }
-
-.title-flex() {
+  
+  .title-flex() {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
   
   }
-
+  
   .button(@height, @width) {
     height: @height;
     width: @width;
@@ -30,12 +30,11 @@
       cursor: pointer;
     }
   }
-
-  // Use the mixin to create an animation..
-
+  
+  // 1. Define the mixin for cross browser keyframes
   
   .keyframes(@name,@rules) {
-
+  
     @-webkit-keyframes @name {
         @rules();
     }
@@ -70,6 +69,8 @@
         
     }
   });
+  
+  
   
   
   

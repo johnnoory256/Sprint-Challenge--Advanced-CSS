@@ -1,43 +1,45 @@
 // Navigation code here
+
 nav {
     width: 100%;
     background-color: rgba(246, 246, 246, 0.9);
     z-index: 1;
     position: fixed;
-    
+  
     .title {
-        width: 800px;
-        margin: 0 auto;
-        .title-flex;
-
-        @media @phone {
-            width: 80%;
-        }
-
-        h1 {
-            font-size: 3rem;
-            margin: 20px 0;
-        }
-        .nav-bar {
-            width: 100%;
-            .flex-nav;
-            padding: 10px 0;
-        
-        a {
+      width: 800px;
+      margin: 0 auto;
+      .title-flex;
+  
+      @media @phone {
+        width: 80%;
+      }
+  
+      h1 {
+        font-size: 3rem;
+        margin: 20px 0;
+      }
+  
+      .nav-bar {
+        width: 100%;
+        .flex-nav;
+        padding: 10px 0;
+  
+          a {
             text-decoration: none;
             color: black;
             font-size: 1.8rem;
-        
-        &:hover {
-
+  
+            &:hover {
+         
             animation: pulse 0.5s 1 both;
             -ms-animation: pulse 0.5s 1 both;
             -moz-animation: pulse 0.5s 1 both;
             -webkit-animation: pulse 0.5s 1 both;
-            -o-animation: pulse 0.5s 1 both;
-            
+            -o-animation: pulse 0.5s 1 both; 
+            }
+          }
         }
       }
     }
-  }
-}
+  
